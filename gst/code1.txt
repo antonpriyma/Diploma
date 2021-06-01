@@ -1,0 +1,109 @@
+;1
+(define memoized-factorial
+  (let ((memo '()))
+    (lambda (n)
+      (if (assoc n memo)
+          (cadr (assoc n memo))
+          (let ((res (if (= n 1)
+                         1
+                         (* n (memoized-factorial (- n 1))))))
+            (set! memo (cons (list n res) memo))
+            res)))))
+
+;2
+(define-syntax lazy-cons
+  (syntax-rules ()
+    ((_ a b)
+     (cons a (list (delay b))))))
+
+(define (lazy-car p)
+  (car p))
+
+(define (lazy-cdr p)
+  (force (cadr p)))
+
+(define (naturals start)
+  (lazy-cons start (naturals (+ start 1))))
+
+(define (lazy-head xs k)
+  (if (= k 0)
+      '()
+      (cons (lazy-car xs) (lazy-head (lazy-cdr xs) (- k 1)))))
+
+(define (lazy-ref xs k)
+  (if (= k 1)
+      (lazy-car xs)
+      (lazy-ref (lazy-cdr xs) (- k 1))))
+    
+
+;3
+(define (read-words)
+  (define (loop xs lst)
+    (let ((c (read-char)))
+      (if (eof-object? c)
+          (if (not (null? xs))
+              (reverse (cons (list->string (reverse xs)) lst))
+              (reverse lst))
+          (if (or (equal? c #\space) (equal? c #\tab) (equal? c #\newline))
+              (if (not (null? xs))
+                  (begin
+                    (peek-char)
+                    (loop '() (cons (list->string (reverse xs)) lst)))
+                  (loop '() lst))
+              (loop (cons c xs) lst)))))
+  (loop '() '()))
+
+;4
+
+(define-syntax define-struct
+  (syntax-rules ()
+    ((_ name . (args))
+     (begin
+       (let ((make (string->symbol (string-append "make-" (symbol->string 'name))))
+             (pred (string->symbol (string-append (symbol->string 'name) "?"))))
+         (eval `(begin
+                  (define (,make . vals)
+                    (begin
+                      (let* ((n (+ (length 'args) 1))
+                             (struct (make-vector n)))
+                        (vector-set! struct 0 'name)
+                        (let loop ((i 1)
+                                   (arg-list 'args)
+                                   (val-list vals))
+                          (if (< i n)
+                              (begin
+                                (vector-set! struct i (list (car arg-list) (car val-list)))
+                                (loop (+ i 1) (cdr arg-list) (cdr val-list)))))
+                        struct)))
+                  (define (,pred p)
+                    (and (vector? p) (equal? (vector-ref p 0) 'name))))
+               (interaction-environment))
+         (let ((op-name ""))
+           (let op-loop ((arg-list 'args))
+               (if (not (null? arg-list))
+                   (begin
+                     (set! op-name (string->symbol (string-append (symbol->string 'name) "-" (symbol->string (car arg-list)))))
+                     (eval `(define (,op-name p)
+                              (let ((n (+ (length 'args) 1)))
+                              (let loop ((i 1))
+                                (if (< i n)
+                                    (if (equal? (car (vector-ref p i)) (car '(,(car arg-list))))
+                                        (cadr (vector-ref p i))
+                                        (loop (+ i 1)))))))
+                           (interaction-environment))
+                     (op-loop (cdr arg-list)))))))
+         (let ((set-name ""))
+           (let set-loop ((arg-list 'args))
+               (begin
+                 (if (not (null? arg-list))
+                     (begin
+                       (set! set-name (string->symbol (string-append "set-" (symbol->string 'name) "-" (symbol->string (car arg-list)) "!")))
+                       (eval `(define (,set-name p v)
+                                (let ((n (+ (length 'args) 1)))
+                                (let loop ((i 1))
+                                  (if (< i n)
+                                      (if (equal? (car (vector-ref p i)) (car '(,(car arg-list))))
+                                          (vector-set! p i (list (car (vector-ref p i)) v))
+                                          (loop (+ i 1)))))))
+                             (interaction-environment))
+                       (set-loop (cdr arg-list)))))))))))

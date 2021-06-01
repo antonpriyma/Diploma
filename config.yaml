@@ -1,0 +1,22 @@
+email:
+  password: Knowledge123
+  server: imap.gmail.com
+  login: antonpriyma80
+  subject_prefix: test_
+  users:
+    a.priyma@corp.mail.ru: Антон Прийма(корп)
+    apriyma0@gmail.com: Антон Прийма(личный)
+
+db:
+  user: postgres
+  password: 1234
+  host: 127.0.0.1
+  port: 5432
+  dbname: diploma
+
+tester:
+  scheme_path: /Applications/Racket v8.1/bin/racket
+  tests:
+    - type: 1
+      input: (my-gcd 10 2)
+      expected: 2

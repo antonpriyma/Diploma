@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0877aaa9-886f-48c7-bb9d-ac30d10c9353" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1s1vYwSiQUCaY6kv2F5xXO6CrdH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gst" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gst" />
+      <recent name="$PROJECT_DIR$/src/plagiasm" />
+      <recent name="$PROJECT_DIR$/parse_utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="LevinstainChecker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="diplomapython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/plagiasm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/plagiasm/LevinstainChecker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ShinglesChecker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="diplomapython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/plagiasm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/plagiasm/ShinglesChecker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gst" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="diplomapython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gst" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gst/gst.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="diplomapython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_interpereter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="diplomapython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/parse_utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parse_utils/test_interpereter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.gst" />
+        <item itemvalue="Python.ShinglesChecker" />
+        <item itemvalue="Python.LevinstainChecker" />
+        <item itemvalue="Python.test_interpereter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0877aaa9-886f-48c7-bb9d-ac30d10c9353" name="Default Changelist" comment="" />
+      <created>1620052960367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620052960367</updated>
+      <workItem from="1620052967346" duration="534000" />
+      <workItem from="1620126387653" duration="5315000" />
+      <workItem from="1620651410227" duration="2811000" />
+      <workItem from="1620756862804" duration="1539000" />
+      <workItem from="1621085130054" duration="3628000" />
+      <workItem from="1621182563642" duration="5479000" />
+      <workItem from="1621262468974" duration="52000" />
+      <workItem from="1621353694668" duration="10631000" />
+      <workItem from="1621442901027" duration="3544000" />
+      <workItem from="1621694480027" duration="9463000" />
+      <workItem from="1621872449794" duration="29000" />
+      <workItem from="1621943024264" duration="3660000" />
+      <workItem from="1622146277748" duration="9011000" />
+      <workItem from="1622202103874" duration="37621000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="126" key="#SQL_Dialects" timestamp="1621192482617">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="126" key="#SQL_Dialects/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1621192482617" />
+    <state x="320" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621192464963">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1621192464963" />
+    <state x="347" y="-772" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1622397204716">
+      <screen x="-240" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="440" y="257" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1621708771819" />
+    <state x="347" y="-772" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.875/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397204716" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1621375160699">
+      <screen x="0" y="25" width="1440" height="785" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.25.1440.785@0.25.1440.785" timestamp="1621375160699" />
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1622501091996">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153493513" />
+    <state width="1398" height="241" key="GridCell.Tab.0.bottom/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785979" />
+    <state width="1878" height="298" key="GridCell.Tab.0.bottom/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397474837" />
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532510" />
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1622501091996" />
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.25.1440.778@0.25.1440.778" timestamp="1621795422945" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.785@0.25.1440.785" timestamp="1622019446870" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413218" />
+    <state width="1878" height="329" key="GridCell.Tab.0.bottom/0.25.1440.875/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397216118" />
+    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1622501091994">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153493512" />
+    <state width="1398" height="241" key="GridCell.Tab.0.center/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785978" />
+    <state width="1878" height="298" key="GridCell.Tab.0.center/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397474836" />
+    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532508" />
+    <state width="1398" height="265" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1622501091994" />
+    <state width="1398" height="240" key="GridCell.Tab.0.center/0.25.1440.778@0.25.1440.778" timestamp="1621795422944" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.785@0.25.1440.785" timestamp="1622019446853" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413217" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.788@0.25.1440.788" timestamp="1622019445047" />
+    <state width="1878" height="329" key="GridCell.Tab.0.center/0.25.1440.875/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397216116" />
+    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1622501091993">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153493511" />
+    <state width="1398" height="241" key="GridCell.Tab.0.left/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785976" />
+    <state width="1878" height="298" key="GridCell.Tab.0.left/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397474835" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532507" />
+    <state width="1398" height="265" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1622501091993" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left/0.25.1440.778@0.25.1440.778" timestamp="1621795422943" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.785@0.25.1440.785" timestamp="1622019446850" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413216" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.788@0.25.1440.788" timestamp="1622019443962" />
+    <state width="1878" height="329" key="GridCell.Tab.0.left/0.25.1440.875/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397216114" />
+    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1622501091995">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153493512" />
+    <state width="1398" height="241" key="GridCell.Tab.0.right/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785978" />
+    <state width="1878" height="298" key="GridCell.Tab.0.right/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397474836" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532509" />
+    <state width="1398" height="265" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1622501091995" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right/0.25.1440.778@0.25.1440.778" timestamp="1621795422944" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.785@0.25.1440.785" timestamp="1622019446866" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413217" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.788@0.25.1440.788" timestamp="1622019445175" />
+    <state width="1878" height="329" key="GridCell.Tab.0.right/0.25.1440.875/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397216117" />
+    <state width="1398" height="298" key="GridCell.Tab.1.bottom" timestamp="1622498307845">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="240" key="GridCell.Tab.1.bottom/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153545350" />
+    <state width="1398" height="241" key="GridCell.Tab.1.bottom/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785982" />
+    <state width="1878" height="298" key="GridCell.Tab.1.bottom/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397489615" />
+    <state width="1398" height="240" key="GridCell.Tab.1.bottom/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532515" />
+    <state width="1398" height="298" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1622498307845" />
+    <state width="1398" height="240" key="GridCell.Tab.1.bottom/0.25.1440.778@0.25.1440.778" timestamp="1621795422946" />
+    <state width="1398" height="231" key="GridCell.Tab.1.bottom/0.25.1440.781/-240.-1055.1920.1055@0.25.1440.781" timestamp="1621193478627" />
+    <state width="1398" height="298" key="GridCell.Tab.1.bottom/0.25.1440.781@0.25.1440.781" timestamp="1622406094538" />
+    <state width="1398" height="298" key="GridCell.Tab.1.bottom/0.25.1440.785@0.25.1440.785" timestamp="1622409496676" />
+    <state width="1398" height="240" key="GridCell.Tab.1.bottom/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413034" />
+    <state width="1398" height="298" key="GridCell.Tab.1.center" timestamp="1622498307844">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="240" key="GridCell.Tab.1.center/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153545347" />
+    <state width="1398" height="241" key="GridCell.Tab.1.center/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785981" />
+    <state width="1878" height="298" key="GridCell.Tab.1.center/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397489613" />
+    <state width="1398" height="240" key="GridCell.Tab.1.center/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532512" />
+    <state width="1398" height="298" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1622498307844" />
+    <state width="1398" height="240" key="GridCell.Tab.1.center/0.25.1440.778@0.25.1440.778" timestamp="1621795422946" />
+    <state width="1398" height="231" key="GridCell.Tab.1.center/0.25.1440.781/-240.-1055.1920.1055@0.25.1440.781" timestamp="1621193478626" />
+    <state width="1398" height="298" key="GridCell.Tab.1.center/0.25.1440.781@0.25.1440.781" timestamp="1622406094537" />
+    <state width="1398" height="298" key="GridCell.Tab.1.center/0.25.1440.785@0.25.1440.785" timestamp="1622409496673" />
+    <state width="1398" height="240" key="GridCell.Tab.1.center/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413031" />
+    <state width="1398" height="298" key="GridCell.Tab.1.left" timestamp="1622498307843">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="240" key="GridCell.Tab.1.left/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153545346" />
+    <state width="1398" height="241" key="GridCell.Tab.1.left/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785980" />
+    <state width="1878" height="298" key="GridCell.Tab.1.left/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397489612" />
+    <state width="1398" height="240" key="GridCell.Tab.1.left/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532511" />
+    <state width="1398" height="298" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1622498307843" />
+    <state width="1398" height="240" key="GridCell.Tab.1.left/0.25.1440.778@0.25.1440.778" timestamp="1621795422945" />
+    <state width="1398" height="231" key="GridCell.Tab.1.left/0.25.1440.781/-240.-1055.1920.1055@0.25.1440.781" timestamp="1621193478624" />
+    <state width="1398" height="298" key="GridCell.Tab.1.left/0.25.1440.781@0.25.1440.781" timestamp="1622406094536" />
+    <state width="1398" height="298" key="GridCell.Tab.1.left/0.25.1440.785@0.25.1440.785" timestamp="1622409496672" />
+    <state width="1398" height="240" key="GridCell.Tab.1.left/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413031" />
+    <state width="1398" height="298" key="GridCell.Tab.1.right" timestamp="1622498307845">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="240" key="GridCell.Tab.1.right/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153545347" />
+    <state width="1398" height="241" key="GridCell.Tab.1.right/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785982" />
+    <state width="1878" height="298" key="GridCell.Tab.1.right/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397489613" />
+    <state width="1398" height="240" key="GridCell.Tab.1.right/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532512" />
+    <state width="1398" height="298" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1622498307845" />
+    <state width="1398" height="240" key="GridCell.Tab.1.right/0.25.1440.778@0.25.1440.778" timestamp="1621795422946" />
+    <state width="1398" height="231" key="GridCell.Tab.1.right/0.25.1440.781/-240.-1055.1920.1055@0.25.1440.781" timestamp="1621193478627" />
+    <state width="1398" height="298" key="GridCell.Tab.1.right/0.25.1440.781@0.25.1440.781" timestamp="1622406094538" />
+    <state width="1398" height="298" key="GridCell.Tab.1.right/0.25.1440.785@0.25.1440.785" timestamp="1622409496675" />
+    <state width="1398" height="240" key="GridCell.Tab.1.right/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413033" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1622203084538">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="720" height="407" key="XDebugger.FullValuePopup/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153491472" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622203084538" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1621381202723" />
+    <state x="491" y="282" width="457" height="332" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1621357077394">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="491" y="282" width="457" height="332" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1440.900@0.0.1440.900" timestamp="1621357077394" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1622147738709">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622147738709" />
+    <state x="397" y="279" key="com.intellij.ide.util.TipDialog" timestamp="1622202103458">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="279" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622202103458" />
+    <state x="397" y="279" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1621872449861" />
+    <state x="397" y="267" key="com.intellij.ide.util.TipDialog/0.25.1440.781/-240.-1055.1920.1055@0.25.1440.781" timestamp="1621085129160" />
+    <state x="383" y="212" width="674" height="476" key="find.popup" timestamp="1622497357585">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="271" y="-826" width="899" height="572" key="find.popup/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622292571128" />
+    <state x="383" y="212" width="674" height="476" key="find.popup/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622205178283" />
+    <state x="383" y="212" width="674" height="476" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1622497357585" />
+    <state x="385" y="196" width="671" height="677" key="search.everywhere.popup" timestamp="1622497362050">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="273" y="-845" width="894" height="812" key="search.everywhere.popup/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622303975613" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622150631937" />
+    <state x="385" y="196" width="671" height="677" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1622497362050" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reader/read_inbox.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/program/usecase/usecase.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/program/repository/psql/repository.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/program/usecase/usecase.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/program/usecase/usecase.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/program/usecase/usecase.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reader/read_inbox.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/program/usecase/usecase.py</url>
+          <line>143</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/plagiasm/ShinglesChecker.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/plagiasm/ShinglesChecker.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gst/gst.py</url>
+          <line>177</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/program/usecase/usecase.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/parse_utils/lispInterpreter.py</url>
+          <line>1197</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/parse_utils/lispInterpreter.py</url>
+          <line>1187</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/tester/tester.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/tester/tester.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/tester/tester.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reader/read_inbox.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reader/read_inbox.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="str.encode(runnable_source_code)" language="Python" />
+        <watch expression="f.read()" language="Python" />
+        <watch expression="f&quot;INSERT INTO programs (source_code, tokenized_code, email, type) values ('{program.source_code}', '{program.tokens}', '{program.owner_email}', '{program.type}')&quot;" language="Python" />
+        <watch expression="decode_header(msg.get(&quot;From&quot;))[1]" language="Python" />
+        <watch expression="decode_header(msg.get(&quot;From&quot;))[0]" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/diplomapython$test_interpereter.coverage" NAME="test_interpereter Coverage Results" MODIFIED="1621945657213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/parse_utils" />
+    <SUITE FILE_PATH="coverage/diplomapython$gst.coverage" NAME="gst Coverage Results" MODIFIED="1622309522834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gst" />
+    <SUITE FILE_PATH="coverage/diplomapython$tester.coverage" NAME="tester Coverage Results" MODIFIED="1621375384534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tester" />
+    <SUITE FILE_PATH="coverage/diplomapython$ShinglesChecker.coverage" NAME="ShinglesChecker Coverage Results" MODIFIED="1622295826363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/plagiasm" />
+    <SUITE FILE_PATH="coverage/diplomapython$main.coverage" NAME="main Coverage Results" MODIFIED="1622500639571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/diplomapython$LevinstainChecker.coverage" NAME="LevinstainChecker Coverage Results" MODIFIED="1622157135313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/plagiasm" />
+  </component>
+</project>

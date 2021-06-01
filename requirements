@@ -1,0 +1,5 @@
+backports.zoneinfo==0.2.1
+config-with-yaml==0.1.0
+numpy==1.20.3
+git+https://github.com/psycopg/psycopg3.git#subdirectory=psycopg3
+PyYAML==5.4.1

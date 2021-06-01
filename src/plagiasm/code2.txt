@@ -1,0 +1,149 @@
+;task 1
+(define memoized-factorial
+  (let ((memo '())) ;ассоц список
+    (lambda (n)
+      (let ((memozed (assq n memo)))
+        (if memozed
+            (cadr memozed)
+            (let ((new-value (if (< n 2)
+                                 1
+                                 (* (memoized-factorial (- n 1)) n))))
+              (set! memo
+                    (cons (list n new-value) memo))
+              new-value))))))
+
+;task 2
+(define-syntax lazy-cons
+  (syntax-rules ()
+    ((_ a b)
+     (cons a (delay b)))))
+
+(define (lazy-car xs)
+  (car xs))
+
+(define (lazy-cdr xs)
+  (force (cdr xs)))
+
+(define (lazy-head xs k)
+  (if (= 0 k)
+      '()
+      (cons (lazy-car xs) (lazy-head (lazy-cdr xs) (- k 1)))))
+
+(define (naturals start)
+  (lazy-cons start (naturals (+ start 1))))
+
+(define (fact a)
+  (let ! ((n a))
+    (if (= 0 n)
+        1
+        (* n (! (- n 1))))))
+
+(define (factorial n)
+  (lazy-cons (fact n) (factorial (+ n 1))))
+
+(define (factorial1 n)
+  (lazy-head (factorial 0) (+ n 1)))
+
+(define (lazy-factorial n)
+  (lazy-car (reverse (factorial1 n))))
+
+;task 3
+
+(define (read-words)
+  (define (find words word ch)
+    (begin
+      (cond
+        ((and (eof-object? ch)
+              (not (null? words))) (reverse words))
+        ((and (eof-object? ch)
+              (not (null? word))) (find (cons (list->string (reverse word)) words) '() (read-char)))
+        ((eof-object? ch) (reverse words))
+        ((and (or (equal? ch #\tab)
+                  (equal? ch #\newline)
+                  (equal? ch #\space))
+              (null? word)) (find words word (read-char)))
+        ((or (equal? ch #\tab)
+             (equal? ch #\newline)
+             (equal? ch #\space)) (find (cons (list->string (reverse word)) words) '() (read-char)))
+        (else (find words (cons ch word) (read-char))))))
+  (find '() '() (read-char)))
+
+;task 5
+
+(define (strings-conc . strings)
+  (if (symbol? (apply string-append strings))
+      (symbol->string (apply string-append strings))
+      (string->symbol (apply string-append strings))))
+
+(define-syntax struct-create-1
+  (syntax-rules ()
+    ((_ type exp ...) (begin
+                        (eval '(define type (list 'exp ...))
+                              (interaction-environment))
+                        (eval (list 'define (list (strings-conc (symbol->string 'type) "?") 'x)
+                                    '(and (list? x) (member (car x) type) (list? x)))
+                              (interaction-environment))))))
+
+(define-syntax struct-create-2
+  (syntax-rules ()
+    ((_ type exp ...) (eval '(define (type exp ...) (list 'type exp ...))
+                            (interaction-environment)))))
+
+(define-syntax define-data
+  (syntax-rules ()
+    ((_ type ((name expr ...) ...))
+     (begin
+       (struct-create-1 type name ...)
+       (struct-create-2 name expr ...) ...))))
+
+
+; Определяем тип
+;
+(define-data figure ((square a)
+                     (rectangle a b)
+                     (triangle a b c)
+                     (circle r)))
+
+; Определяем значения типа
+;
+(define s (square 10))
+(define r (rectangle 10 20))
+(define t (triangle 10 20 30))
+(define c (circle 10))
+
+; Пусть определение алгебраического типа вводит
+; не только конструкторы, но и предикат этого типа:
+;
+(and (figure? s)
+     (figure? r)
+     (figure? t)
+     (figure? c))
+
+(define pi (acos -1)) ; Для окружности
+
+(define (perim f)
+  (match f
+    ((square a)       (* 4 a))
+    ((rectangle a b)  (* 2 (+ a b)))
+    ((triangle a b c) (+ a b c))
+    ((circle r)       (* 2 pi r))))
+
+(perim s) ;⇒ 40
+(perim r) ;⇒ 60
+(perim t) ;⇒ 60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
