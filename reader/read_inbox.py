@@ -5,18 +5,25 @@ import re
 import time
 import webbrowser
 from email.header import decode_header
+from email.message import EmailMessage
+from smtplib import SMTP_SSL, SMTP_SSL_PORT
 
 from src.models.Program import Program
+from src.models.test_result import TestResult
 
 
 class EmailReader(object):
     folder = "inbox"
 
-    def __init__(self, email: str, password: str, provider: str, subject_prefix: str, emails_dict: dict):
+    def __init__(self, email: str, password: str, provider: str, subject_prefix: str, emails_dict: dict, smtp_provider: str):
         self.email = email
         self.password = password
         self.provider = provider
         self.subject_prefix = subject_prefix
+
+        self.smtp_server = SMTP_SSL(smtp_provider, port=SMTP_SSL_PORT)
+        self.smtp_server.set_debuglevel(1)  # Show SMTP server interactions
+        self.smtp_server.login(email, password)
 
         self.emails = {}
         for mail, name in emails_dict.items():
@@ -132,6 +139,32 @@ class EmailReader(object):
         if text.startswith(prefix):
             return text[len(prefix) :]
         return text  # or whatever
+
+
+    def send_failed_test(self, test: TestResult):
+        # Craft the email by hand
+        from_email = f'<{self.email}>'  # or simply the email address
+        to_emails = [test.email]
+        email_message = EmailMessage()
+        email_message.add_header('To', ', '.join(to_emails))
+        email_message.add_header('From', from_email)
+        email_message.add_header('Subject', f"{self.subject_prefix}{test.type}")
+        email_message.add_header('X-Priority', '1')  # Urgency, 1 highest, 5 lowest
+        email_message.set_content(f"{test.email}, задача №{test.type}, тест: [команда: {test.test}, ожидалось: {test.expected}, получено: {test.actual}]")
+        self.smtp_server.sendmail(from_email, to_emails, email_message.as_bytes())
+
+    def send_success_email(self, email: str, type: int):
+        # Craft the email by hand
+        from_email = f'<{self.email}>'  # or simply the email address
+        to_emails = [email]
+        email_message = EmailMessage()
+        email_message.add_header('To', ', '.join(to_emails))
+        email_message.add_header('From', from_email)
+        email_message.add_header('Subject', f"{self.subject_prefix}{type}")
+        email_message.add_header('X-Priority', '1')  # Urgency, 1 highest, 5 lowest
+        email_message.set_content(
+            f"{email}, задача №{type} принята")
+        self.smtp_server.sendmail(from_email, to_emails, email_message.as_bytes())
 
 
 def clean(text):

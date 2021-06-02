@@ -7,6 +7,9 @@
           (my-gcd (- x y) y)
           (my-gcd (- y x) x))))
 
+(define (my-lcm x y)
+  (/ (* x y) (my-gcd x y)))
+
 (define (prime? n)
   (define (plus a)
     (cond
@@ -15,11 +18,6 @@
       (else (if (not (= (remainder n a) 0))
                 (plus (+ a 1))
                 #f))))
-  (plus 2))          
-
-(define (my-lcm x y)
-  (/ (* x y) (my-gcd x y)))
-
-
+  (plus 2))
 
 

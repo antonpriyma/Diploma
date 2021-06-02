@@ -3,6 +3,7 @@ import os
 from datetime import datetime
 
 from parse_utils.lispInterpreter import parseTokens
+from reader.read_inbox import EmailReader
 from src.models import Program
 from src.models.Test import Test
 from src.models.plagiasm_aggregated_result import (
@@ -17,13 +18,14 @@ from src.tester.tester import Tester
 
 class Usecase(UsecaseInterface):
     def __init__(
-        self,
-        programs: RepositoryInterface,
-        tester: Tester,
-        shingles: PlagiasmChecker,
-        levinstain: PlagiasmChecker,
-        shingles_treshold: int = 90,
-        levinstain_treshold: int = 90,
+            self,
+            programs: RepositoryInterface,
+            email: EmailReader,
+            tester: Tester,
+            shingles: PlagiasmChecker,
+            levinstain: PlagiasmChecker,
+            shingles_treshold: int = 90,
+            levinstain_treshold: int = 90,
     ):
         self.programs = programs
         self.tester = tester
@@ -31,6 +33,7 @@ class Usecase(UsecaseInterface):
         self.levinastain = levinstain
         self.shingles_treshold = shingles_treshold
         self.levinstain_treshold = levinstain_treshold
+        self.email = email
 
     def save_res_to_system(self, res: WorkResult):
         time = datetime.now()
@@ -48,12 +51,16 @@ class Usecase(UsecaseInterface):
             f.write(result["source_code"])
             f.close()
 
+            self.email.send_success_email(result['email'], result['type'])
+
         for test in res.failed_tests:
             path_tests = f"results/{time}/{test.email}/failed_tests/{test.type}"
             os.makedirs(path_tests)
             f = open(f"{path_tests}/code.scm", "w")
             f.write(test.source_code)
             f.close()
+
+            self.email.send_failed_test(test)
 
         for plagiasm in res.failed_plagiasm:
             path_plagiasm = f"results/{time}/{plagiasm.sender_email}/failed_plagiasm/{plagiasm.type}"
@@ -129,14 +136,14 @@ class Usecase(UsecaseInterface):
             plagiasm_res = self.compare_with_program(program, old_program)
 
             if (
-                plagiasm_res.get_general_similarity()
-                > max_plagiasm_res.get_general_similarity()
+                    plagiasm_res.get_general_similarity()
+                    > max_plagiasm_res.get_general_similarity()
             ):
                 max_plagiasm_res = plagiasm_res
 
         if (
-            max_plagiasm_res.shingles_result > self.shingles_treshold
-            or max_plagiasm_res.levenstain_result > self.levinstain_treshold
+                max_plagiasm_res.shingles_result > self.shingles_treshold
+                or max_plagiasm_res.levenstain_result > self.levinstain_treshold
         ):
             max_plagiasm_res.success = False
 

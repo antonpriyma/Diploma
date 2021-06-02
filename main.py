@@ -1,4 +1,5 @@
-import psycopg3
+
+from mysql.connector import connect, Error
 
 from parse_utils.lispInterpreter import parseTokens
 from reader.read_inbox import EmailReader
@@ -40,9 +41,17 @@ if __name__ == "__main__":
         cfg.getProperty("email.server"),
         cfg.getProperty("email.subject_prefix"),
         cfg.getProperty("email.users"),
+        "smtp.gmail.com"
     )
 
-    connection = psycopg3.connect(
+    # connection = psycopg3.connect(
+    #     user=cfg.getProperty("db.user"),
+    #     password=cfg.getProperty("db.password"),
+    #     host=cfg.getProperty("db.host"),
+    #     port=cfg.getProperty("db.port"),
+    # )
+
+    connection = connect(
         user=cfg.getProperty("db.user"),
         password=cfg.getProperty("db.password"),
         host=cfg.getProperty("db.host"),
@@ -54,35 +63,38 @@ if __name__ == "__main__":
     # sql.SQL and sql.Identifier are needed to avoid SQL injection attacks.
     try:
         cur.execute(f'CREATE DATABASE {cfg.getProperty("db.dbname")}')
-    except psycopg3.errors.DuplicateDatabase:
-        connection = psycopg3.connect(
+    except Error:
+        connection = connect(
             user=cfg.getProperty("db.user"),
             password=cfg.getProperty("db.password"),
             host=cfg.getProperty("db.host"),
             port=cfg.getProperty("db.port"),
-            dbname=cfg.getProperty("db.dbname")
+            database=cfg.getProperty("db.dbname")
         )
 
-    cur.execute("""
+    connection = connect(
+        user=cfg.getProperty("db.user"),
+        password=cfg.getProperty("db.password"),
+        host=cfg.getProperty("db.host"),
+        port=cfg.getProperty("db.port"),
+        database=cfg.getProperty("db.dbname")
+    )
+
+    connection.cursor().execute("""
 create table if not exists programs(
-    id bigserial not null  primary key,
-    source_code varchar not null,
-    tokenized_code varchar not null,
-    email varchar not null,
+    id int auto_increment not null  primary key,
+    source_code TEXT not null,
+    tokenized_code TEXT not null,
+    email TEXT not null,
     type int
-);
+);""")
+    connection.commit()
 
-create table if not exists tests(
-    prorgram_type int not null,
-    input varchar not null,
-    expected varchar not null
-)""")
-
-    repo = Repository(connection.cursor(), connection)
+    repo = Repository(connection)
     tester = Tester(
         cfg.getProperty("tester.scheme_path"), cfg.getProperty("tester.tests")
     )
-    usecase = Usecase(repo, tester, ShinglesChecker(), LevinstainChecker())
+    usecase = Usecase(repo, reader, tester, ShinglesChecker(), LevinstainChecker())
 
     programs = reader.read_programs()
     res = usecase.process_programs(programs)
