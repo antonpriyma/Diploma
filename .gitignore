@@ -143,4 +143,6 @@ mail/v1/download/*
 /.gnupg
 /nothing-secret
 
+/results
+
 .venv
