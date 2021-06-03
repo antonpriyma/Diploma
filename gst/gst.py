@@ -2,14 +2,14 @@ from parse_utils.lispInterpreter import parseTokens
 from src.models.Program import Program
 
 
-def prepare_marks(tokens):  # creates array with marked tokens
+def prepare_marks(tokens):
     tokens_arr = []
     for token in tokens:
-        tokens_arr.append([token, False])  # marked as not compared
+        tokens_arr.append([token, False])
     return tokens_arr
 
 
-def compare_words(word1, word2):  # compare two words, should return 0 - 1
+def compare_words(word1, word2):
     return 1 if word1 == word2 else 0
 
 
@@ -17,13 +17,12 @@ def compare_tokens(n1, n2, tokens1, tokens2, compare_function):  # compare two t
     try:
         if tokens1[n1][1] == tokens2[n2][1] == False:  # both token are unmatched
             return compare_function(tokens1[n1][0], tokens2[n2][0])
-    except IndexError:  # do not check overflown values
+    except IndexError:
         return False
     return False
 
 
 def check_matches(matches, n1, n2):  # check if matches are not overlaping
-    # matches[1,2,3]: 1 pos of X token, 2 pos of Y token, 3 length of the match
     for n3, match in enumerate(matches):
         if (n1 >= match[0] and n1 <= match[0] + match[2] - 1) or (n2 >= match[1] and n2 <= match[1] + match[2] - 1):
             return False
@@ -33,7 +32,6 @@ def check_matches(matches, n1, n2):  # check if matches are not overlaping
 # tokens1, tokens2 = ['string', .... ]
 # minimal match - minimal number of tokens in a match
 # treshold (includes) - treshold decides if match should continue
-# compare function - def func(value 1, value 2) returns 0-1 (1 - match, 0 - no match)
 def token_comparison(tokens1, tokens2, minimal_match=5, threshold=1, compare_function=compare_words, score_array=False,
                      use_score=False):
     tiles = []

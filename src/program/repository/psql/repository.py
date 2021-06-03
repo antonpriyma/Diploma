@@ -11,7 +11,17 @@ class Repository(RepositoryInterface):
 
     def save_program(self, program):
         self.conn.cursor().execute(
-            f"INSERT INTO programs (source_code, tokenized_code, email, type) values ('{program.source_code}', '{program.tokens}', '{program.owner_email}', '{program.type}')"
+            """
+            INSERT INTO programs 
+            (source_code, tokenized_code, email, name, type) 
+            values (%s, %s, %s, %s, %s)""",
+            (
+                program.source_code,
+                program.tokens,
+                program.owner_email,
+                program.owner_name,
+                program.type,
+            ),
         )
 
         self.conn.commit()
@@ -23,9 +33,10 @@ class Repository(RepositoryInterface):
 
             programs = [
                 Program(
-                    type=raw_program[4],
+                    type=raw_program[5],
                     source_code=raw_program[1],
                     owner_email=raw_program[3],
+                    owner_name=raw_program[4],
                     tokens=raw_program[2],
                 )
                 for raw_program in raw_programs
@@ -54,9 +65,10 @@ class Repository(RepositoryInterface):
 
             programs = [
                 Program(
-                    type=raw_program[4],
+                    type=raw_program[5],
                     source_code=raw_program[1],
                     owner_email=raw_program[3],
+                    owner_name=raw_program[4],
                     tokens=raw_program[2],
                 )
                 for raw_program in raw_programs

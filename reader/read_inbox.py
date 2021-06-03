@@ -15,14 +15,14 @@ from src.models.test_result import TestResult
 class EmailReader(object):
     folder = "inbox"
 
-    def __init__(self, email: str, password: str, provider: str, subject_prefix: str, emails_dict: dict, smtp_provider: str):
+    def __init__(self, email: str, password: str, provider: str, subject_prefix: str, emails_dict: dict,
+                 smtp_provider: str):
         self.email = email
         self.password = password
         self.provider = provider
         self.subject_prefix = subject_prefix
 
         self.smtp_server = SMTP_SSL(smtp_provider, port=SMTP_SSL_PORT)
-        self.smtp_server.set_debuglevel(1)  # Show SMTP server interactions
         self.smtp_server.login(email, password)
 
         self.emails = {}
@@ -93,65 +93,59 @@ class EmailReader(object):
                                 except:
                                     pass
                                 if (
-                                    content_type == "text/plain"
-                                    and "attachment" not in content_disposition
+                                        content_type == "text/plain"
+                                        and "attachment" not in content_disposition
                                 ):
                                     # print text/plain emails and skip attachments
                                     print(body)  # TODO: log it
                                 elif "attachment" in content_disposition:
                                     # download attachment
                                     filename = part.get_filename()
-                                    if filename:
-                                        folder_name = clean(subject)
-                                        if not os.path.isdir(folder_name):
-                                            # make a folder for this email (named after the subject)
-                                            os.mkdir(folder_name)
-                                        filepath = os.path.join(folder_name, filename)
-                                        # download attachment and save it
 
-                                        programs.append(
-                                            Program(
-                                                program_type,
-                                                part.get_payload(decode=True).decode(
-                                                    "utf-8"
-                                                ),
-                                                self.emails.get(From),
-                                                time.time(),
-                                            )
+                                    programs.append(
+                                        Program(
+                                            program_type,
+                                            part.get_payload(decode=True).decode(
+                                                "utf-8"
+                                            ),
+                                            From,
+                                            self.emails.get(From),
+                                            time.time(),
                                         )
-                                        open(filepath, "wb").write(
-                                            part.get_payload(decode=True)
-                                        )
+                                    )
 
+        programs.sort(key=lambda program: program.date)
 
-            programs.sort(key=lambda program: program.date)
+        unique = {}
+        programs_not_unique = programs.copy()
+        for program in programs_not_unique:
+            if unique.get(f"{program.owner_email}_{program.type}") is None:
+                unique[f"{program.owner_email}_{program.type}"] = True
+            else:
+                programs.remove(program)
 
-            unique = {}
-            for program in programs:
-                if unique.get(f"{program.owner_email}_{program.type}") is None:
-                    unique[f"{program.owner_email}_{program.type}"] = True
-                else:
-                    programs.remove(program)
+        return programs
 
-            return programs
 
     def remove_prefix(self, text, prefix):
         if text.startswith(prefix):
-            return text[len(prefix) :]
+            return text[len(prefix):]
         return text  # or whatever
 
 
     def send_failed_test(self, test: TestResult):
         # Craft the email by hand
         from_email = f'<{self.email}>'  # or simply the email address
-        to_emails = [test.email]
+        to_emails = [test.sender_email]
         email_message = EmailMessage()
         email_message.add_header('To', ', '.join(to_emails))
         email_message.add_header('From', from_email)
         email_message.add_header('Subject', f"{self.subject_prefix}{test.type}")
         email_message.add_header('X-Priority', '1')  # Urgency, 1 highest, 5 lowest
-        email_message.set_content(f"{test.email}, задача №{test.type}, тест: [команда: {test.test}, ожидалось: {test.expected}, получено: {test.actual}]")
+        email_message.set_content(
+            f"{test.sender_email}, задача №{test.type}, тест: [команда: {test.test}, ожидалось: {test.expected}, получено: {test.actual}]")
         self.smtp_server.sendmail(from_email, to_emails, email_message.as_bytes())
+
 
     def send_success_email(self, email: str, type: int):
         # Craft the email by hand
@@ -167,6 +161,6 @@ class EmailReader(object):
         self.smtp_server.sendmail(from_email, to_emails, email_message.as_bytes())
 
 
-def clean(text):
-    # clean text for creating a folder
-    return "".join(c if c.isalnum() else "_" for c in text)
+    def clean(text):
+        # clean text for creating a folder
+        return "".join(c if c.isalnum() else "_" for c in text)

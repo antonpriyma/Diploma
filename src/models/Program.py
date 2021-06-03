@@ -225,11 +225,18 @@ standart_procedures = [
 
 class Program:
     def __init__(
-        self, type: int, source_code: str, owner_email: str, date: float = 0, tokens=""
+        self,
+        type: int,
+        source_code: str,
+        owner_email: str = "",
+        owner_name: str = "",
+        date: float = 0,
+        tokens="",
     ):
         self.type = type
         self.source_code = source_code
         self.owner_email = owner_email
+        self.owner_name = owner_name
         self.date = date
         self.tokens = tokens
 

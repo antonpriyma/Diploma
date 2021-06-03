@@ -1,21 +1,28 @@
 email:
-  password: 123
+  password: your_password
   server: imap.gmail.com
-  login: test_login
-  subject_prefix: test_
+  login: your_login
+  subject_prefix: hw_
   users:
-    apriyma0@gmail.com: Антон Прийма
+    test_user@gmail.com: Тестовый Юзер
 
 db:
   user: root
-  password: 123
+  password: your_password
   host: 127.0.0.1
   port: 3306
   dbname: diploma
 
+res_path: results
 tester:
-  scheme_path: /Applications/Racket v8.1/bin/racket
+  scheme_path: your_scheme_path
   tests:
     - type: 1
       input: (my-gcd 10 2)
       expected: 2
+    - type: 2
+      input: (for i in '(1 2 3)
+        (for j in '(4 5 6)
+        (display (list i j))
+        (newline)))
+      expected: (1 4)(1 5)(1 6)(2 4)(2 5)(2 6)(3 4)(3 5)(3 6)

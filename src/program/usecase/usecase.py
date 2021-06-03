@@ -18,14 +18,15 @@ from src.tester.tester import Tester
 
 class Usecase(UsecaseInterface):
     def __init__(
-            self,
-            programs: RepositoryInterface,
-            email: EmailReader,
-            tester: Tester,
-            shingles: PlagiasmChecker,
-            levinstain: PlagiasmChecker,
-            shingles_treshold: int = 90,
-            levinstain_treshold: int = 90,
+        self,
+        programs: RepositoryInterface,
+        email: EmailReader,
+        tester: Tester,
+        shingles: PlagiasmChecker,
+        levinstain: PlagiasmChecker,
+        shingles_treshold: int = 90,
+        levinstain_treshold: int = 90,
+        res_path: str = "",
     ):
         self.programs = programs
         self.tester = tester
@@ -34,27 +35,32 @@ class Usecase(UsecaseInterface):
         self.shingles_treshold = shingles_treshold
         self.levinstain_treshold = levinstain_treshold
         self.email = email
+        self.res_path = res_path
 
     def save_res_to_system(self, res: WorkResult):
-        time = datetime.now()
-        path = f"results/{time}"
+        time = datetime.now().strftime("%m.%d.%Y_%H.%M.%S")
+
+        path = os.path.join(self.res_path, time)
 
         try:
             os.makedirs(path)
         except OSError:
             print("Creation of the directory %s failed" % path)
+            return
 
         for result in res.success_results:
-            path_success = f"results/{time}/{result['email']}/success/{result['type']}"
+            path_success = os.path.join(
+                path, f"{result['email']}/success/{result['type']}"
+            )
             os.makedirs(path_success)
             f = open(f"{path_success}/code.scm", "w")
             f.write(result["source_code"])
             f.close()
 
-            self.email.send_success_email(result['email'], result['type'])
+            self.email.send_success_email(result["email"], result["type"])
 
         for test in res.failed_tests:
-            path_tests = f"results/{time}/{test.email}/failed_tests/{test.type}"
+            path_tests = os.path.join(path, f"{test.email}/failed_tests/{test.type}")
             os.makedirs(path_tests)
             f = open(f"{path_tests}/code.scm", "w")
             f.write(test.source_code)
@@ -63,7 +69,9 @@ class Usecase(UsecaseInterface):
             self.email.send_failed_test(test)
 
         for plagiasm in res.failed_plagiasm:
-            path_plagiasm = f"results/{time}/{plagiasm.sender_email}/failed_plagiasm/{plagiasm.type}"
+            path_plagiasm = os.path.join(
+                path, f"{plagiasm.sender_email}/failed_plagiasm/{plagiasm.type}"
+            )
             os.makedirs(path_plagiasm)
             f = open(f"{path_plagiasm}/code.scm", "w")
             f.write(plagiasm.from_program.source_code)
@@ -136,14 +144,14 @@ class Usecase(UsecaseInterface):
             plagiasm_res = self.compare_with_program(program, old_program)
 
             if (
-                    plagiasm_res.get_general_similarity()
-                    > max_plagiasm_res.get_general_similarity()
+                plagiasm_res.get_general_similarity()
+                > max_plagiasm_res.get_general_similarity()
             ):
                 max_plagiasm_res = plagiasm_res
 
         if (
-                max_plagiasm_res.shingles_result > self.shingles_treshold
-                or max_plagiasm_res.levenstain_result > self.levinstain_treshold
+            max_plagiasm_res.shingles_result > self.shingles_treshold
+            or max_plagiasm_res.levenstain_result > self.levinstain_treshold
         ):
             max_plagiasm_res.success = False
 

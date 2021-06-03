@@ -1,3 +1,5 @@
+import subprocess
+from venv import logger
 
 from mysql.connector import connect, Error
 
@@ -29,38 +31,42 @@ def validate_cfg(cfg):
     assert cfg.getPropertyWithDefault("tester.scheme_path", "") != ""
     assert cfg.getPropertyWithDefault("tester.tests", None) is not None
 
+    assert cfg.getPropertyWithDefault("res_path", "") != ""
+
 
 if __name__ == "__main__":
     cfg = config.load("config.yaml")
 
     validate_cfg(cfg)
 
-    reader = EmailReader(
-        cfg.getProperty("email.login"),
-        cfg.getProperty("email.password"),
-        cfg.getProperty("email.server"),
-        cfg.getProperty("email.subject_prefix"),
-        cfg.getProperty("email.users"),
-        "smtp.gmail.com"
-    )
+    reader = None
+    try:
+        reader = EmailReader(
+            cfg.getProperty("email.login"),
+            cfg.getProperty("email.password"),
+            cfg.getProperty("email.server"),
+            cfg.getProperty("email.subject_prefix"),
+            cfg.getProperty("email.users"),
+            "smtp.gmail.com",
+        )
+    except:
+        print("Bad email credentials")
+        exit(1)
 
-    # connection = psycopg3.connect(
-    #     user=cfg.getProperty("db.user"),
-    #     password=cfg.getProperty("db.password"),
-    #     host=cfg.getProperty("db.host"),
-    #     port=cfg.getProperty("db.port"),
-    # )
-
-    connection = connect(
-        user=cfg.getProperty("db.user"),
-        password=cfg.getProperty("db.password"),
-        host=cfg.getProperty("db.host"),
-        port=cfg.getProperty("db.port"),
-    )
+    connection = None
+    try:
+        connection = connect(
+            user=cfg.getProperty("db.user"),
+            password=cfg.getProperty("db.password"),
+            host=cfg.getProperty("db.host"),
+            port=cfg.getProperty("db.port"),
+        )
+    except:
+        print("Can`t connect to db")
+        exit(1)
 
     cur = connection.cursor()
     connection.autocommit = True
-    # sql.SQL and sql.Identifier are needed to avoid SQL injection attacks.
     try:
         cur.execute(f'CREATE DATABASE {cfg.getProperty("db.dbname")}')
     except Error:
@@ -69,7 +75,7 @@ if __name__ == "__main__":
             password=cfg.getProperty("db.password"),
             host=cfg.getProperty("db.host"),
             port=cfg.getProperty("db.port"),
-            database=cfg.getProperty("db.dbname")
+            database=cfg.getProperty("db.dbname"),
         )
 
     connection = connect(
@@ -77,32 +83,47 @@ if __name__ == "__main__":
         password=cfg.getProperty("db.password"),
         host=cfg.getProperty("db.host"),
         port=cfg.getProperty("db.port"),
-        database=cfg.getProperty("db.dbname")
+        database=cfg.getProperty("db.dbname"),
     )
 
-    connection.cursor().execute("""
+    connection.cursor().execute(
+        """
 create table if not exists programs(
     id int auto_increment not null  primary key,
     source_code TEXT not null,
     tokenized_code TEXT not null,
     email TEXT not null,
+    name TEXT not null,
     type int
-);""")
+);"""
+    )
     connection.commit()
 
     repo = Repository(connection)
+
+    # test scheme path
+    try:
+        process = subprocess.Popen(
+            [cfg.getProperty("tester.scheme_path"), "test.scm"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        stdout, stderr = process.communicate()
+    except:
+        print("Bad scheme path")
+        exit(1)
+
     tester = Tester(
         cfg.getProperty("tester.scheme_path"), cfg.getProperty("tester.tests")
     )
-    usecase = Usecase(repo, reader, tester, ShinglesChecker(), LevinstainChecker())
+    usecase = Usecase(
+        repo,
+        reader,
+        tester,
+        ShinglesChecker(),
+        LevinstainChecker(),
+        res_path=cfg.getProperty("res_path"),
+    )
 
     programs = reader.read_programs()
     res = usecase.process_programs(programs)
-
-    # for program in programs:
-    #     tokenize_program(program)
-    #
-    # for program in programs:
-    #     print(f'type: {program.type}, code: {program.source_code}, tokens: {program.tokens}')
-
-    # plagiasmResult = checkProgramForPlagiasm(programs)

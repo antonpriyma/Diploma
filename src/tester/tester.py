@@ -30,10 +30,21 @@ class Tester(object):
                     test.expected,
                     result,
                     program.type,
+                    program.owner_name,
+                    program.source_code,
                     program.owner_email,
                 )
 
-        return TestResult(True, "", "", "", program.type, program.owner_email)
+        return TestResult(
+            True,
+            "",
+            "",
+            "",
+            program.type,
+            program.owner_name,
+            program.source_code,
+            program.owner_email,
+        )
 
     def run_scheme_test(self, source_code, input) -> str:
 
@@ -46,7 +57,6 @@ class Tester(object):
         f.write(str.encode(runnable_source_code))
         f.seek(os.SEEK_SET)
 
-        # todo: make config path
         process = subprocess.Popen(
             [self.scheme_path, f.name], stdout=subprocess.PIPE, stderr=subprocess.PIPE
         )
