@@ -19,12 +19,14 @@ class PlagiasmResultWithInfo(PlagiasmAgregatedResult):
         self,
         type: int = 0,
         sender_email: str = "",
+        sender_name: str = "",
         shingles_result: int = 0,
         levenstain_result: int = 0,
         success: bool = True,
         sender_program: Program = None,
         from_program: Program = None,
         from_email: str = "",
+        from_name: str = "",
     ):
         super().__init__(shingles_result, levenstain_result)
         self.success = success
@@ -34,6 +36,8 @@ class PlagiasmResultWithInfo(PlagiasmAgregatedResult):
         self.sender_program = sender_program
         self.from_program = from_program
         self.similar_sources = ""
+        self.sender_name = sender_name
+        self.from_name = from_name
 
     def calculate_similar_sources(self):
         tokens1 = [token[0] for token in self.from_program.token_list]

@@ -2,20 +2,21 @@ email:
   password: your_password
   server: imap.gmail.com
   login: your_login
-  subject_prefix: hw_
+  subject_prefix: test_
   users:
-    test_user@gmail.com: Тестовый Юзер
+    test@gmail.com: Test
+
 
 db:
   user: root
   password: your_password
   host: 127.0.0.1
   port: 3306
-  dbname: diploma
+  dbname: your_db_name
 
 res_path: results
 tester:
-  scheme_path: your_scheme_path
+  scheme_path: Scheme/Path
   tests:
     - type: 1
       input: (my-gcd 10 2)

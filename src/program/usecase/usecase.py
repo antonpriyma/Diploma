@@ -50,7 +50,7 @@ class Usecase(UsecaseInterface):
 
         for result in res.success_results:
             path_success = os.path.join(
-                path, f"{result['email']}/success/{result['type']}"
+                path, f"{result['name']}/success/{result['type']}"
             )
             os.makedirs(path_success)
             f = open(f"{path_success}/code.scm", "w")
@@ -60,7 +60,9 @@ class Usecase(UsecaseInterface):
             self.email.send_success_email(result["email"], result["type"])
 
         for test in res.failed_tests:
-            path_tests = os.path.join(path, f"{test.email}/failed_tests/{test.type}")
+            path_tests = os.path.join(
+                path, f"{test.sender_name}/failed_tests/{test.type}"
+            )
             os.makedirs(path_tests)
             f = open(f"{path_tests}/code.scm", "w")
             f.write(test.source_code)
@@ -70,7 +72,7 @@ class Usecase(UsecaseInterface):
 
         for plagiasm in res.failed_plagiasm:
             path_plagiasm = os.path.join(
-                path, f"{plagiasm.sender_email}/failed_plagiasm/{plagiasm.type}"
+                path, f"{plagiasm.sender_name}/failed_plagiasm/{plagiasm.type}"
             )
             os.makedirs(path_plagiasm)
             f = open(f"{path_plagiasm}/code.scm", "w")
@@ -163,7 +165,10 @@ class Usecase(UsecaseInterface):
         return (
             False,
             PlagiasmResultWithInfo(
-                success=True, type=program.type, sender_email=program.owner_email
+                success=True,
+                type=program.type,
+                sender_email=program.owner_email,
+                sender_name=program.owner_name,
             ),
         )
 
@@ -191,4 +196,6 @@ class Usecase(UsecaseInterface):
             levenstain_result=levenstain_result,
             sender_program=program,
             from_program=old_program,
+            sender_name=program.owner_name,
+            from_name=old_program.owner_name,
         )

@@ -30,10 +30,14 @@ class WorkResult(object):
         self.success_results = []
         for plagiasm in self.success_plagiasm:
             for test in self.success_tests:
-                if plagiasm.type == test.type and plagiasm.sender_email == test.email:
+                if (
+                    plagiasm.type == test.type
+                    and plagiasm.sender_email == test.sender_email
+                ):
                     self.success_results.append(
                         {
                             "email": plagiasm.sender_email,
+                            "name": plagiasm.sender_name,
                             "type": plagiasm.type,
                             "source_code": test.source_code,
                         }
@@ -62,13 +66,13 @@ class WorkResult(object):
         success = ""
         for test in self.tests:
             if test.success:
-                success += f"{test.email}, задача №{test.type}"
+                success += f"{test.sender_email}, задача №{test.type}"
                 success += "\n\t\t"
 
         failed = ""
         for test in self.tests:
             if not test.success:
-                failed += f"{test.email}, задача №{test.type}, тест: [команда: {test.test}, ожидалось: {test.expected}, получено: {test.actual}]"
+                failed += f"{test.sender_email}, задача №{test.type}, тест: [команда: {test.test}, ожидалось: {test.expected}, получено: {test.actual}]"
                 failed += "\n\t\t"
 
         success_plagiasm = ""
@@ -81,7 +85,7 @@ class WorkResult(object):
         for plagiasm in self.plagiasm:
             if not plagiasm.success:
                 failed_plagiasm += (
-                    f"{plagiasm.sender_email}, задача №{plagiasm.type}, cписано у {plagiasm.from_email}. "
+                    f"{plagiasm.sender_name}, задача №{plagiasm.type}, cписано у {plagiasm.from_name}. "
                     f"Результат: [{plagiasm}] "
                 )
                 failed_plagiasm += "\n\t\t"

@@ -60,19 +60,23 @@ class EmailReader(object):
                         if re.match(f"{self.subject_prefix}\\d", subject) is None:
                             continue
                         # decode email sender
-                        From, encoding = decode_header(msg.get("From"))[1]
-                        if isinstance(From, bytes):
-                            if encoding is not None:
-                                From = From.decode(encoding)
-                            else:
-                                From = From.decode("utf-8")
+                        # From, encoding = decode_header(msg.get("From"))[1]
+                        # if isinstance(From, bytes):
+                        #     if encoding is not None:
+                        #         From = From.decode(encoding)
+                        #     else:
+                        #         From = From.decode("utf-8")
+                        #
+                        #     From = From.replace("<", "")
+                        #     From = From.replace(">", "")
+                        #     From = From.replace(" ", "")
 
-                            From = From.replace("<", "")
-                            From = From.replace(">", "")
-                            From = From.replace(" ", "")
+                        From = re.search(r'[\w\.-]+@[\w\.-]+', msg.get("From")).group(0)
 
                         if self.emails.get(From) is None:
                             continue
+
+
 
                         print("Subject:", subject)
                         print("From:", From)

@@ -4,61 +4,11 @@
     <list default="true" id="0877aaa9-886f-48c7-bb9d-ac30d10c9353" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gst/gst.py" beforeDir="false" afterPath="$PROJECT_DIR$/gst/gst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proc.rtf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reader/read_inbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/reader/read_inbox.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-25 16:57:58.701707/report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-25 16:57:58.701707/Антон Прийма/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-25 16:57:58.701707/Антон Прийма/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-25 17:06:27.500060/report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-27 23:36:24.830723/Антон Прийма/success/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-27 23:38:10.683338/report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-27 23:38:10.683338/Антон Прийма/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-27 23:38:10.683338/Антон Прийма/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-28 00:12:37.960383/Антон Прийма/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-28 00:12:37.960383/Антон Прийма/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-05-28 01:52:54.991225/kek/failed_tests/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 00:29:02.200033/a.priyma@corp.mail.ru/failed_tests/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 00:31:17.246075/a.priyma@corp.mail.ru/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 00:31:17.246075/a.priyma@corp.mail.ru/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 00:36:07.508656/a.priyma@corp.mail.ru/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 00:36:07.508656/a.priyma@corp.mail.ru/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 00:59:10.236985/Антон Прийма(корп)/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 00:59:10.236985/Антон Прийма(корп)/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 00:59:10.236985/Антон Прийма(личный)/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 00:59:10.236985/Антон Прийма(личный)/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 01:56:07.790212/Антон Прийма(корп)/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 01:56:07.790212/Антон Прийма(корп)/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 01:56:07.790212/Антон Прийма(личный)/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 01:56:07.790212/Антон Прийма(личный)/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 14:54:58.532287/Антон Прийма(корп)/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 14:54:58.532287/Антон Прийма(корп)/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 14:54:58.532287/Антон Прийма(личный)/success/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 15:39:38.408845/Антон Прийма(корп)/failed_tests/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 15:41:34.734105/Антон Прийма(корп)/failed_tests/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 15:44:57.856086/Антон Прийма(корп)/failed_tests/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 15:47:32.488931/a.priyma@corp.mail.ru/failed_tests/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 15:51:37.587186/a.priyma@corp.mail.ru/failed_tests/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 15:56:55.406426/a.priyma@corp.mail.ru/failed_tests/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 15:57:19.700640/a.priyma@corp.mail.ru/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 15:57:19.700640/a.priyma@corp.mail.ru/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 16:00:16.301579/a.priyma@corp.mail.ru/failed_tests/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 16:02:01.416533/a.priyma@corp.mail.ru/failed_plagiasm/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 16:02:01.416533/a.priyma@corp.mail.ru/failed_plagiasm/1/code_similar.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 16:04:16.091890/a.priyma@corp.mail.ru/success/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 16:05:22.352530/a.priyma@corp.mail.ru/success/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2021-06-01 16:06:34.406526/a.priyma@corp.mail.ru/success/1/code.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Program.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/plagiasm_aggregated_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/plagiasm_aggregated_result.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/test_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/test_result.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/program/repository/psql/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/program/repository/psql/repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/work_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/work_result.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/program/usecase/usecase.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/program/usecase/usecase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tester/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tester/tester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_1/=?UTF-8?B?dGVzdC5zY2hlbWU=?=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_1/test.scheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_1/test.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_1/test_error.scm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_1/test_simple.scheme" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +228,7 @@
       <workItem from="1621943024264" duration="3660000" />
       <workItem from="1622146277748" duration="9011000" />
       <workItem from="1622202103874" duration="44319000" />
-      <workItem from="1622584624937" duration="13468000" />
+      <workItem from="1622584624937" duration="16597000" />
     </task>
     <servers />
   </component>
@@ -303,119 +253,123 @@
       <screen x="0" y="25" width="1440" height="785" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.25.1440.785@0.25.1440.785" timestamp="1621375160699" />
-    <state width="1398" height="354" key="GridCell.Tab.0.bottom" timestamp="1622707757433">
+    <state width="1398" height="225" key="GridCell.Tab.0.bottom" timestamp="1622720430063">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153493513" />
     <state width="1398" height="241" key="GridCell.Tab.0.bottom/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785979" />
     <state width="1878" height="298" key="GridCell.Tab.0.bottom/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397474837" />
     <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532510" />
-    <state width="1398" height="354" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1622707757433" />
+    <state width="1398" height="225" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1622720430063" />
     <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.25.1440.778@0.25.1440.778" timestamp="1621795422945" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.785@0.25.1440.785" timestamp="1622019446870" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413218" />
     <state width="1878" height="329" key="GridCell.Tab.0.bottom/0.25.1440.875/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397216118" />
-    <state width="1398" height="354" key="GridCell.Tab.0.center" timestamp="1622707757432">
+    <state width="1398" height="225" key="GridCell.Tab.0.center" timestamp="1622720430061">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153493512" />
     <state width="1398" height="241" key="GridCell.Tab.0.center/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785978" />
     <state width="1878" height="298" key="GridCell.Tab.0.center/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397474836" />
     <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532508" />
-    <state width="1398" height="354" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1622707757432" />
+    <state width="1398" height="225" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1622720430061" />
     <state width="1398" height="240" key="GridCell.Tab.0.center/0.25.1440.778@0.25.1440.778" timestamp="1621795422944" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.785@0.25.1440.785" timestamp="1622019446853" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413217" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.788@0.25.1440.788" timestamp="1622019445047" />
     <state width="1878" height="329" key="GridCell.Tab.0.center/0.25.1440.875/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397216116" />
-    <state width="1398" height="354" key="GridCell.Tab.0.left" timestamp="1622707757431">
+    <state width="1398" height="225" key="GridCell.Tab.0.left" timestamp="1622720430058">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153493511" />
     <state width="1398" height="241" key="GridCell.Tab.0.left/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785976" />
     <state width="1878" height="298" key="GridCell.Tab.0.left/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397474835" />
     <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532507" />
-    <state width="1398" height="354" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1622707757431" />
+    <state width="1398" height="225" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1622720430058" />
     <state width="1398" height="240" key="GridCell.Tab.0.left/0.25.1440.778@0.25.1440.778" timestamp="1621795422943" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.785@0.25.1440.785" timestamp="1622019446850" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413216" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.788@0.25.1440.788" timestamp="1622019443962" />
     <state width="1878" height="329" key="GridCell.Tab.0.left/0.25.1440.875/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397216114" />
-    <state width="1398" height="354" key="GridCell.Tab.0.right" timestamp="1622707757432">
+    <state width="1398" height="225" key="GridCell.Tab.0.right" timestamp="1622720430062">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153493512" />
     <state width="1398" height="241" key="GridCell.Tab.0.right/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785978" />
     <state width="1878" height="298" key="GridCell.Tab.0.right/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397474836" />
     <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532509" />
-    <state width="1398" height="354" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1622707757432" />
+    <state width="1398" height="225" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1622720430062" />
     <state width="1398" height="240" key="GridCell.Tab.0.right/0.25.1440.778@0.25.1440.778" timestamp="1621795422944" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.785@0.25.1440.785" timestamp="1622019446866" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413217" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.788@0.25.1440.788" timestamp="1622019445175" />
     <state width="1878" height="329" key="GridCell.Tab.0.right/0.25.1440.875/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397216117" />
-    <state width="1398" height="143" key="GridCell.Tab.1.bottom" timestamp="1622706875708">
+    <state width="1398" height="383" key="GridCell.Tab.1.bottom" timestamp="1622717661630">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.1.bottom/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153545350" />
     <state width="1398" height="241" key="GridCell.Tab.1.bottom/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785982" />
     <state width="1878" height="298" key="GridCell.Tab.1.bottom/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397489615" />
     <state width="1398" height="240" key="GridCell.Tab.1.bottom/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532515" />
-    <state width="1398" height="143" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1622706875708" />
+    <state width="1398" height="383" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1622717661630" />
     <state width="1398" height="240" key="GridCell.Tab.1.bottom/0.25.1440.778@0.25.1440.778" timestamp="1621795422946" />
     <state width="1398" height="231" key="GridCell.Tab.1.bottom/0.25.1440.781/-240.-1055.1920.1055@0.25.1440.781" timestamp="1621193478627" />
     <state width="1398" height="298" key="GridCell.Tab.1.bottom/0.25.1440.781@0.25.1440.781" timestamp="1622406094538" />
     <state width="1398" height="298" key="GridCell.Tab.1.bottom/0.25.1440.785@0.25.1440.785" timestamp="1622409496676" />
     <state width="1398" height="240" key="GridCell.Tab.1.bottom/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413034" />
-    <state width="1398" height="143" key="GridCell.Tab.1.center" timestamp="1622706875707">
+    <state width="1398" height="383" key="GridCell.Tab.1.bottom/0.25.1440.788@0.25.1440.788" timestamp="1622716796418" />
+    <state width="1398" height="383" key="GridCell.Tab.1.center" timestamp="1622717661629">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.1.center/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153545347" />
     <state width="1398" height="241" key="GridCell.Tab.1.center/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785981" />
     <state width="1878" height="298" key="GridCell.Tab.1.center/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397489613" />
     <state width="1398" height="240" key="GridCell.Tab.1.center/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532512" />
-    <state width="1398" height="143" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1622706875707" />
+    <state width="1398" height="383" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1622717661629" />
     <state width="1398" height="240" key="GridCell.Tab.1.center/0.25.1440.778@0.25.1440.778" timestamp="1621795422946" />
     <state width="1398" height="231" key="GridCell.Tab.1.center/0.25.1440.781/-240.-1055.1920.1055@0.25.1440.781" timestamp="1621193478626" />
     <state width="1398" height="298" key="GridCell.Tab.1.center/0.25.1440.781@0.25.1440.781" timestamp="1622406094537" />
     <state width="1398" height="298" key="GridCell.Tab.1.center/0.25.1440.785@0.25.1440.785" timestamp="1622409496673" />
     <state width="1398" height="240" key="GridCell.Tab.1.center/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413031" />
-    <state width="1398" height="143" key="GridCell.Tab.1.left" timestamp="1622706875706">
+    <state width="1398" height="383" key="GridCell.Tab.1.center/0.25.1440.788@0.25.1440.788" timestamp="1622716796417" />
+    <state width="1398" height="383" key="GridCell.Tab.1.left" timestamp="1622717661629">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.1.left/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153545346" />
     <state width="1398" height="241" key="GridCell.Tab.1.left/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785980" />
     <state width="1878" height="298" key="GridCell.Tab.1.left/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397489612" />
     <state width="1398" height="240" key="GridCell.Tab.1.left/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532511" />
-    <state width="1398" height="143" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1622706875706" />
+    <state width="1398" height="383" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1622717661629" />
     <state width="1398" height="240" key="GridCell.Tab.1.left/0.25.1440.778@0.25.1440.778" timestamp="1621795422945" />
     <state width="1398" height="231" key="GridCell.Tab.1.left/0.25.1440.781/-240.-1055.1920.1055@0.25.1440.781" timestamp="1621193478624" />
     <state width="1398" height="298" key="GridCell.Tab.1.left/0.25.1440.781@0.25.1440.781" timestamp="1622406094536" />
     <state width="1398" height="298" key="GridCell.Tab.1.left/0.25.1440.785@0.25.1440.785" timestamp="1622409496672" />
     <state width="1398" height="240" key="GridCell.Tab.1.left/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413031" />
-    <state width="1398" height="143" key="GridCell.Tab.1.right" timestamp="1622706875707">
+    <state width="1398" height="383" key="GridCell.Tab.1.left/0.25.1440.788@0.25.1440.788" timestamp="1622716796414" />
+    <state width="1398" height="383" key="GridCell.Tab.1.right" timestamp="1622717661630">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.1.right/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153545347" />
     <state width="1398" height="241" key="GridCell.Tab.1.right/0.0.1440.900/-240.-1055.1920.1055@0.0.1440.900" timestamp="1620757785982" />
     <state width="1878" height="298" key="GridCell.Tab.1.right/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1622397489613" />
     <state width="1398" height="240" key="GridCell.Tab.1.right/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622287532512" />
-    <state width="1398" height="143" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1622706875707" />
+    <state width="1398" height="383" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1622717661630" />
     <state width="1398" height="240" key="GridCell.Tab.1.right/0.25.1440.778@0.25.1440.778" timestamp="1621795422946" />
     <state width="1398" height="231" key="GridCell.Tab.1.right/0.25.1440.781/-240.-1055.1920.1055@0.25.1440.781" timestamp="1621193478627" />
     <state width="1398" height="298" key="GridCell.Tab.1.right/0.25.1440.781@0.25.1440.781" timestamp="1622406094538" />
     <state width="1398" height="298" key="GridCell.Tab.1.right/0.25.1440.785@0.25.1440.785" timestamp="1622409496675" />
     <state width="1398" height="240" key="GridCell.Tab.1.right/0.25.1440.788/-240.-1055.1920.1055@0.25.1440.788" timestamp="1622185413033" />
+    <state width="1398" height="383" key="GridCell.Tab.1.right/0.25.1440.788@0.25.1440.788" timestamp="1622716796418" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1622667847523">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1622667847523" />
-    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1622203084538">
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1622716886086">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="720" height="407" key="XDebugger.FullValuePopup/0.0.1440.813/-240.-1055.1920.1055@0.0.1440.813" timestamp="1622153491472" />
     <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1622203084538" />
-    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1621381202723" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1622716886086" />
     <state x="491" y="282" width="457" height="332" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1621357077394">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -473,11 +427,6 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/reader/read_inbox.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/program/usecase/usecase.py</url>
           <line>158</line>
           <option name="timeStamp" value="24" />
@@ -529,7 +478,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/reader/read_inbox.py</url>
-          <line>122</line>
+          <line>126</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -559,8 +508,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/reader/read_inbox.py</url>
-          <line>120</line>
+          <line>124</line>
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reader/read_inbox.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -571,6 +525,7 @@
         <watch expression="f&quot;INSERT INTO programs (source_code, tokenized_code, email, type) values ('{program.source_code}', '{program.tokens}', '{program.owner_email}', '{program.type}')&quot;" language="Python" />
         <watch expression="decode_header(msg.get(&quot;From&quot;))[1]" language="Python" />
         <watch expression="decode_header(msg.get(&quot;From&quot;))[0]" language="Python" />
+        <watch expression="msg.get(&quot;From&quot;)" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -579,7 +534,7 @@
     <SUITE FILE_PATH="coverage/diplomapython$gst.coverage" NAME="gst Coverage Results" MODIFIED="1622309522834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gst" />
     <SUITE FILE_PATH="coverage/diplomapython$tester.coverage" NAME="tester Coverage Results" MODIFIED="1621375384534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tester" />
     <SUITE FILE_PATH="coverage/diplomapython$ShinglesChecker.coverage" NAME="ShinglesChecker Coverage Results" MODIFIED="1622295826363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/plagiasm" />
-    <SUITE FILE_PATH="coverage/diplomapython$main.coverage" NAME="main Coverage Results" MODIFIED="1622707523331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/diplomapython$main.coverage" NAME="main Coverage Results" MODIFIED="1622718588187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/diplomapython$LevinstainChecker.coverage" NAME="LevinstainChecker Coverage Results" MODIFIED="1622157135313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/plagiasm" />
   </component>
 </project>

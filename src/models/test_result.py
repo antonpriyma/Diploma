@@ -15,6 +15,6 @@ class TestResult(object):
         self.expected = expected
         self.actual = actual
         self.type = type
-        self.email = sender_name
+        self.sender_name = sender_name
         self.source_code = source_code
         self.sender_email = sender_email
